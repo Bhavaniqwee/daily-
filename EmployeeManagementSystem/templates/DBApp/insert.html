@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is Employee management system project </title>
+        <link rel="stylesheet" href="{%static 'css/styles.css' %}">
+    </head>
+    <body>
+        <h1 class="heading">Employee management system</h1>
+        <div class="main">
+        <form action="" method="post">
+            {% csrf_token %}
+            <label>Enter empid
+                <input type="text" name="">
+            </label><br><br>
+            <label for="">Enter name
+                <input type="text" name="">
+            </label><br><br>
+            <label for="">Enter salary
+                <input type="text" name="">
+            </label><br><br>
+            <button>Insert</button>
+        </form>
+        </div>
+    </body>
+</html>

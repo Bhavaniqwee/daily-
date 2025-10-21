@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #id1{
+                text-align: center;
+                border: 1px blue solid;
+                width:270px;
+
+            }
+            button{
+                margin-left: 80px;
+                margin-top: 20px;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="id1">
+            <p>hai..........i am bhavani</p>
+            <h1>Javascript</h1>
+            <h2>Javascript</h2>
+            <h3>Javascript</h3>
+            <h4>Javascript</h4>
+            <h5>Javascript</h5>
+            <h6>Javascript</h6>
+        </div>
+        <button onclick="bgc()">Click here</button>
+    <script>
+        function bgc(){
+            let div=document.getElementById('id1')
+            if(div.style.backgroundColor==='red'){
+                div.style.backgroundColor='white';
+            }
+            else{
+                div.style.backgroundColor='red';
+            }
+            
+        }
+    </script>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Background</title>
+  <style>
+    #myDiv {
+      width: 200px;
+      height: 150px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      margin: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="myDiv">Hello!</div>
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      let div = document.getElementById("myDiv");
+
+      // Pick a random color
+      let colors = ["red", "green", "blue", "orange", "purple", "pink"];
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+      div.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
