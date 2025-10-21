@@ -3,6 +3,8 @@ function LCM(n1,n2){
         greater=n1
     }
     else{
+
+        
         greater=n2
     }
     while (true){

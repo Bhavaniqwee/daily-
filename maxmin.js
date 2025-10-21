@@ -6,6 +6,8 @@ function max(arr){
             first=i
         }
         if(i<last){
+
+            
             last=i
         }
     }
